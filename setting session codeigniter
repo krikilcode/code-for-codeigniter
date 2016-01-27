@@ -1,0 +1,12 @@
+step setting session codeigniter
+agar data session dapat tersimpan ke dalam database
+
+//buka file application/config/config.php 
+
+$config['sess_driver'] = 'database'; // model penyimpanan yg dipakai
+$config['sess_cookie_name'] = 'session_fsp';
+$config['sess_expiration'] = 7200;
+$config['sess_save_path'] = 'tb_sessions'; // nama tabel pada database
+$config['sess_match_ip'] = FALSE;
+$config['sess_time_to_update'] = 300;
+$config['sess_regenerate_destroy'] = FALSE;
